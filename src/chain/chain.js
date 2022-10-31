@@ -3,7 +3,12 @@ import { BigNumber } from 'ethers';
 import ABI_SERVICE from './abis/ABI_SERVICE.json';
 import BC_SERVICE from './abis/BC_SERVICE.json';
 
-export const provider = new ethers.providers.Web3Provider(window.ethereum, 'any');
+export var provider;
+try {
+    provider = new ethers.providers.Web3Provider(window.ethereum, 'any');
+} catch {
+    alert('install metamask')
+}
 export var signer;
 const contractAddress = '0xe5c5b261610E5F6C4d290883bccd896fE0bB73D7';
 const errorAlert = 'ERROR:\n1: connect wallet\n2: retry inputs\n3: switch to bsc testnet (chainID: 97)';
