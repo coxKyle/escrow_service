@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/escrow_service/static/css/main.f916cbc6.css",
+    "main.js": "/escrow_service/static/js/main.1e1d7ab8.js",
+    "static/js/787.28cb0dcd.chunk.js": "/escrow_service/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/escrow_service/index.html",
+    "main.f916cbc6.css.map": "/escrow_service/static/css/main.f916cbc6.css.map",
+    "main.1e1d7ab8.js.map": "/escrow_service/static/js/main.1e1d7ab8.js.map",
+    "787.28cb0dcd.chunk.js.map": "/escrow_service/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f916cbc6.css",
+    "static/js/main.1e1d7ab8.js"
+  ]
+}
