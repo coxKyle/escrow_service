@@ -1,0 +1,358 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "ID",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "clientWallet",
+				"type": "address"
+			}
+		],
+		"name": "acceptRequest",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "ID",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "clientWallet",
+				"type": "address"
+			},
+			{
+				"internalType": "bool",
+				"name": "complete",
+				"type": "bool"
+			}
+		],
+		"name": "changeOutcome",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "ID",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "clientWallet",
+				"type": "address"
+			},
+			{
+				"internalType": "bool",
+				"name": "complete",
+				"type": "bool"
+			}
+		],
+		"name": "claim",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "name",
+				"type": "string"
+			},
+			{
+				"internalType": "string[3]",
+				"name": "tags",
+				"type": "string[3]"
+			},
+			{
+				"internalType": "string",
+				"name": "location",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "wallet",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "paymentWei",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "email",
+				"type": "string"
+			}
+		],
+		"name": "createService",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "ID",
+				"type": "uint256"
+			}
+		],
+		"name": "requestService",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "ID",
+				"type": "uint256"
+			}
+		],
+		"name": "withdrawRequest",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "antiExploitFee",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "search",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "maxSearch",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "firstID",
+				"type": "uint256"
+			}
+		],
+		"name": "findServicesID",
+		"outputs": [
+			{
+				"internalType": "uint256[]",
+				"name": "",
+				"type": "uint256[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "ID",
+				"type": "uint256"
+			}
+		],
+		"name": "getCompletions",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "ID",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "clientWallet",
+				"type": "address"
+			}
+		],
+		"name": "getConfirmations",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "ID",
+				"type": "uint256"
+			}
+		],
+		"name": "getDistrust",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "ID",
+				"type": "uint256"
+			}
+		],
+		"name": "getEmail",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "ID",
+				"type": "uint256"
+			}
+		],
+		"name": "getLocation",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "ID",
+				"type": "uint256"
+			}
+		],
+		"name": "getName",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "ID",
+				"type": "uint256"
+			}
+		],
+		"name": "getPaymentWei",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "ID",
+				"type": "uint256"
+			}
+		],
+		"name": "getTotalClients",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "ID",
+				"type": "uint256"
+			}
+		],
+		"name": "getWallet",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
